@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SkillSwap 2.0 - Sign In</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="theme-color" content="#0C0C0C" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo-mark" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="2" width="20" height="20" rx="6" fill="#7A0000"/>
+            <path d="M7 12h10" stroke="#FF6A6A" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <a href="index.html" class="brand-title">SkillSwap 2.0</a>
+      </div>
+
+      <nav class="nav" id="mainNav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="signin.html" class="nav-link active">Sign In</a></li>
+          <li><a href="signup.html" class="nav-link cta">Sign Up</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <select aria-label="language" class="lang-select">
+          <option>EN</option>
+          <option>UR</option>
+          <option>AR</option>
+        </select>
+
+        <div class="search-wrap" role="search">
+          <input id="searchInput" class="search-input" type="search" placeholder="Search..." />
+          <button class="search-btn" aria-label="Search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M21 21l-4.35-4.35" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+              <circle cx="11" cy="11" r="6" stroke="#fff" stroke-width="1.6"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SIGN-IN FORM SECTION -->
+  <section class="signin-section container section-pad">
+    <div class="signin-card animate-in">
+      <h2 class="signin-title">Sign In</h2>
+      <form id="signinForm">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+        <br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="••••••••" required>
+
+        <button type="submit" class="btn btn-primary">Sign In</button>
+      </form>
+
+      <div class="signin-footer">
+        <p>Don't have an account? <a href="signup.html" class="link-accent">Sign Up</a></p>
+        <p><a href="#" class="link-accent">Forgot Password?</a></p>
+      </div>
+
+      <div class="social-login">
+        <p>Or sign in with:</p>
+        <div class="social-icons">
+          <a href="#" class="social-btn" aria-label="Google">G</a>
+          <a href="#" class="social-btn" aria-label="Facebook">F</a>
+          <a href="#" class="social-btn" aria-label="Twitter">T</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col contact">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:info@skillswap.com">info@skillswap.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+      </div>
+
+      <div class="footer-col follow">
+        <h4>Follow</h4>
+        <div class="social">
+          <a class="social-btn" href="#" aria-label="Twitter">T</a>
+          <a class="social-btn" href="#" aria-label="Instagram">I</a>
+          <a class="social-btn" href="#" aria-label="LinkedIn">L</a>
+        </div>
+      </div>
+
+      <div class="footer-col copyright">
+        <p>© <span id="year"></span> SkillSwap 2.0. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
